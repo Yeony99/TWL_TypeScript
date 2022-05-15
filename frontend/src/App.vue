@@ -23,9 +23,9 @@ export default defineComponent({
   setup() {
     const jobs = ref<Job[]>([
       { title: 'Backend Dev', location: 'Seoul', salary: 100, id: '1' },
-      { title: 'Frontend Dev', location: 'Seoul', salary: 100, id: '2' },
-      { title: 'farm worker', location: 'Seoul', salary: 500, id: '3' },
-      { title: 'fisherman', location: 'Seoul', salary: 200, id: '4' },
+      { title: 'Frontend Dev', location: 'LA', salary: 100, id: '2' },
+      { title: 'farm worker', location: 'Jeju', salary: 500, id: '3' },
+      { title: 'fisherman', location: 'Suwon', salary: 200, id: '4' },
     ])
     const order = ref<OrderTerm>('title')
 
