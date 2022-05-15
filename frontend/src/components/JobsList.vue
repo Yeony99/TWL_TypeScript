@@ -1,5 +1,6 @@
 <template>
     <div class="job-list">
+        <p>Ordered by {{ order }}</p>
         <ul>
             <li v-for="job in jobs" :key="job.id">
                 <h2>{{ job.title }} in {{ job.location }}</h2>
@@ -16,13 +17,18 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue'
-import Job from '@/types/Job'
+import Job from '../types/Job'
+import OrderTerm from '../types/OrderTerm'
 
 export default defineComponent({            // Prop으로 받은 데이터의 key 알기 위해 PropType
     props: {
         jobs: {
             required: true,
             type: Array as PropType<Job[]>        
+        },
+        order: {
+            required: true,
+            type: String as PropType<OrderTerm>
         }
     }
 })
