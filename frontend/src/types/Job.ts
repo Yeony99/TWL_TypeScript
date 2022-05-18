@@ -1,7 +1,8 @@
 interface Job {
     location: string,
     salary: number,
-    id: string
+    id: string,
+    title: string,
 }
 
 export default Job

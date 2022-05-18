@@ -36,7 +36,6 @@ export default defineComponent({
         return a[props.order] > b[props.order] ? 1: -1
       })
     })
-
     return { orderedJobs }
   }
 })
@@ -73,5 +72,3 @@ export default defineComponent({
   margin: 10px 4px;
 }
 </style>
-
-
