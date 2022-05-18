@@ -17,8 +17,8 @@
 
 <script lang="ts">
 import {computed, defineComponent, PropType} from "vue";
-import Job from "@/types/Job";
-import OrderTerm from "@/types/OrderTerm";
+import Job from "../types/Job";
+import OrderTerm from "../types/OrderTerm";
 export default defineComponent({
   props: {
     jobs: {
