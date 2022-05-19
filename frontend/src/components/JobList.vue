@@ -17,8 +17,8 @@
 
 <script lang="ts">
 import {computed, defineComponent, PropType} from "vue";
-import Job from "@/types/Job";
-import OrderTerm from "@/types/OrderTerm";
+import Job from "../types/Job";
+import OrderTerm from "../types/OrderTerm";
 export default defineComponent({
   props: {
     jobs: {
@@ -36,7 +36,6 @@ export default defineComponent({
         return a[props.order] > b[props.order] ? 1: -1
       })
     })
-
     return { orderedJobs }
   }
 })
@@ -73,5 +72,3 @@ export default defineComponent({
   margin: 10px 4px;
 }
 </style>
-
-
